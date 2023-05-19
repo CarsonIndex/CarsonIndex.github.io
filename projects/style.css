@@ -1,0 +1,179 @@
+body {
+	background: rgb(0,0,0);
+  	background: repeating-radial-gradient(
+	circle at 0px 0px,
+	rgb(0,0,0),
+	rgb(25,25,25) 325px);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    color: rgb(255,255,255);
+	font-family: Tahoma, sans-serif;
+	overflow: hidden;
+}
+
+a {
+	color: white;
+}
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2%;
+	font-size: 26px;
+}
+
+#icons {
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#Index {
+	width: 250px;
+	height: 250px;
+	border-radius: 25%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8%;
+	transition: 1s;
+}
+#Index:hover {
+	box-shadow: 0 0 20px white;
+}
+
+#GitHub {
+	width: 65px;
+	height: 65px;
+	padding: 5px 5px 5px 5px;
+	background-color: white;
+	border-radius: 25%;
+	transition: 1s;
+}
+#GitHub:hover {
+	background-color: deepskyblue;
+}
+
+#LinkedIn {
+	width: 75px;
+	height: 75px;
+	background-color: white;
+	border-radius: 25%;
+	Transition: 1s;
+}
+#LinkedIn:hover {
+	background-color: deepskyblue;
+}
+
+#Email {
+	width: 53px;
+	height: 53px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	border-radius: 25%;
+	transition: 1s;
+}
+#Email:hover {
+	background-color: deepskyblue;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 3px 3px blue;
+	transition: 2s;
+	margin-bottom: 10px;
+}
+h1:hover {
+	color: blue;
+	text-shadow: 3px 3px white;
+}
+h2 {
+	font-size: 28px;
+	text-align: center;
+	text-shadow: 3px 3px purple;
+	transition: 2s;
+	margin-top: 0;
+}
+h2:hover {
+	color: purple;
+	text-shadow: 2px 2px white;
+}
+
+#LoadingBackground {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	height:100%;
+	width:100%;
+	opacity: 1;
+	background-color: black;
+	animation-name: Opacity;
+	animation-delay: 8s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+@keyframes Opacity {
+	0%   {opacity: 1;}
+	100% {opacity: 0;}
+}
+@keyframes LeftShift {
+	0%   {left: 100%;}
+	100% {left: 0;}
+}
+@keyframes RightShift {
+	0% 	 {left: -100%;}
+	100% {left: 0;}
+}
+@keyframes FadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+#YellowBox {
+	position:absolute;
+	top:0;
+	left:100%;
+	bottom:0;
+	right:0;
+	height:25%;
+	width:100%;
+	background-color: #FFF430;
+	animation: LeftShift 1s 1, FadeOut 1s 3s 1;
+}
+
+#WhiteBox {
+	position:absolute;
+	top:25%;
+	left:100%;
+	bottom:0;
+	right:0;
+	height:25%;
+	width:100%;
+	background-color: #FFFFFF;
+	animation: RightShift 1s 1s 1, FadeOut 1s 3s 1;
+}
+#PurpleBox {
+	position:absolute;
+	top:50%;
+	left:-100%;
+	bottom:0;
+	right:0;
+	height:25%;
+	width:100%;
+	background-color: #9C59D1;
+	animation: LeftShift 1s 2s 1, FadeOut 1s 3s 1;
+}
+#BlackBox {
+	position:absolute;
+	top:0;
+	left: 0;
+	bottom:0;
+	right:0;
+	height:100%;
+	width:100%;
+	background-color: black;
+	animation: FadeOut 1s 3s 1;
+}
